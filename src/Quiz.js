@@ -14,7 +14,7 @@ class Quiz extends Component {
     }
     render (){
         return (<div>
-            <QuizQuestion />
+            <QuizQuestion quiz_question={this.state.quiz_position -1} />
         </div>);
     };
 }
