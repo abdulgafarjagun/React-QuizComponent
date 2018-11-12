@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 
 class QuizQuestionButton extends Component {
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
     }
     render(){
         return (<li>
-            <button />
+            <button>{this.props.button_text}</button>
         </li>);
     }
 }
