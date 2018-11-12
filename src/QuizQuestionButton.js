@@ -1,4 +1,4 @@
-import React, { Componenet } from 'react'
+import React, { Component } from 'react'
 
 class QuizQuestionButton extends Componenet {
     constructor(){
