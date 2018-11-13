@@ -10,12 +10,10 @@ class QuizQuestion extends Component {
       };
     }
     handleClick(buttonText){
-      this.setState(prevState => ({
-        incorrectAnswer: !prevState.incorrectAnswer
-      }));
       buttonText === 
         this.props.quiz_question.answer && 
-          this.props.showNextQuestionHandler();
+          (this.props.showNextQuestionHandler(),
+            this.setState(prevState => ({ incorrectAnswer: !prevState.incorrectAnswer })));
     }
     render() {
         return(<main>
